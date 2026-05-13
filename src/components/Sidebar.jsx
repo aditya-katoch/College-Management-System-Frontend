@@ -23,14 +23,14 @@ function Sidebar() {
       </div>
 
       <div className="pt-5.5 text-[#85B7EB]">
-        <SidebarItem icon={<DashboardIcon />} text="Dashboard" />
-        <SidebarItem icon={<UserIcon />} text="Students" />
-        <SidebarItem icon={<AcademicIcon />} text="Faculty" />
-        <SidebarItem icon={<BookIcon />} text="Courses" />
-        <SidebarItem icon={<FileIcon />} text="Exams & Results" />
-        <SidebarItem icon={<FeesIcon />} text="Fees" />
-        <SidebarItem icon={<LibraryIcon />} text="Library" />
-        <SidebarItem icon={<NoticeIcon />} text="Notices" />
+        <SidebarItem icon={<DashboardIcon />} text="Dashboard" to="/admin/dashboard"/>
+        <SidebarItem icon={<UserIcon />} text="Students" to="/admin/students"/>
+        <SidebarItem icon={<AcademicIcon />} text="Faculty" to="/admin/faculty"/>
+        <SidebarItem icon={<BookIcon />} text="Courses" to="/admin/courses"/>
+        <SidebarItem icon={<FileIcon />} text="Exams & Results" to="/admin/exams"/>
+        <SidebarItem icon={<FeesIcon />} text="Fees" to="/admin/fees"/>
+        <SidebarItem icon={<LibraryIcon />} text="Library" to="/admin/library"/>
+        <SidebarItem icon={<NoticeIcon />} text="Notices" to="/admin/notices"/>
       </div>
 
       <div className="flex justify-center mt-12">

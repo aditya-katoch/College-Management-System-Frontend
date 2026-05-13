@@ -1,9 +1,21 @@
-function SidebarItem({ text, icon }) {
+import { NavLink } from "react-router-dom";
+
+function SidebarItem({ text, icon, to }) {
   return (
-    <div className="flex items-center py-3.5 text-md cursor-pointer max-w-64 pl-8 rounded-md hover:bg-[#1D5185] transition duration-300 ease-in-out">
+    <NavLink
+      to={to}
+      className={({
+        isActive,
+      }) => `flex items-center py-3.5 text-md cursor-pointer max-w-64 pl-8 rounded-md transition duration-300 ease-in-out
+        ${
+          isActive
+            ? "bg-[#378ADD] text-white"
+            : "text-[#85B7EB] hover:bg-[#1D5185]"
+        }`}
+    >
       <div className="pr-3">{icon}</div>
       <div>{text}</div>
-    </div>
+    </NavLink>
   );
 }
 
