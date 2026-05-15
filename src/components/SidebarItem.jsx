@@ -6,7 +6,7 @@ function SidebarItem({ text, icon, to }) {
       to={to}
       className={({
         isActive,
-      }) => `flex items-center py-3.5 text-md cursor-pointer max-w-64 pl-8 rounded-md transition duration-300 ease-in-out
+      }) => `flex items-center py-2.5 text-md cursor-pointer max-w-64 pl-8 transition duration-300 ease-in-out
         ${
           isActive
             ? "bg-[#378ADD] text-white"

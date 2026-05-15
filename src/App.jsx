@@ -1,13 +1,14 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import  AdminDashboard  from "./pages/AdminDashboard";
-import Students from "../src/components/Students"
-import Dashboard from "./components/Dashboard";
-import Faculty from "./components/Faculty";
-import Courses from "./components/Courses";
-import Exams from "./components/Exams";
-import Fees from "./components/Fees";
-import Library from "./components/Library";
-import Notices from "./components/Notices";
+import StudentList from "./pages/students/StudentList"
+import DashboardPage from "./pages/dashboard/DashboardPage";
+import FacultyPage from "./pages/faculty/FacultyPage";
+import CoursesPage from "./pages/courses/CoursesPage";
+import ExamsPage from "./pages/exams/ExamsPage";
+import FeesPage from "./pages/fees/FeesPage";
+import LibraryPage from "./pages/libraryy/LibraryPage";
+import NoticesPage from "./pages/notices/NoticesPage";
+import StudentProfile from "./pages/students/StudentProfile";
 
 function App() {
   return (
@@ -16,14 +17,15 @@ function App() {
         <Routes>
           <Route path="/admin" element={<AdminDashboard />}>
             <Route index element={<Navigate to="dashboard" replace/>} />
-            <Route path="dashboard" element={<Dashboard />} />
-            <Route path="students" element={<Students />} />
-            <Route path="faculty" element={<Faculty />} />
-            <Route path="courses" element={<Courses />} />
-            <Route path="exams" element={<Exams />} />
-            <Route path="fees" element={<Fees />} />
-            <Route path="library" element={<Library />} />
-            <Route path="notices" element={<Notices />} />
+            <Route path="dashboard" element={<DashboardPage />} />
+            <Route path="students" element={<StudentList />} />
+            <Route path="students/:id" element={<StudentProfile />} />
+            <Route path="faculty" element={<FacultyPage />} />
+            <Route path="courses" element={<CoursesPage />} />
+            <Route path="exams" element={<ExamsPage />} />
+            <Route path="fees" element={<FeesPage />} />
+            <Route path="library" element={<LibraryPage />} />
+            <Route path="notices" element={<NoticesPage />} />
           </Route>
         </Routes>
       </BrowserRouter>

@@ -7,7 +7,7 @@ import FeesIcon from "../icons/FeesIcon";
 import FileIcon from "../icons/FileIcon";
 import NoticeIcon from "../icons/NoticeIcon";
 import LibraryIcon from "../icons/LibraryIcon";
-import Logout from "./Logout";
+import LogoutButton from "./ui/LogoutButton";
 
 function Sidebar() {
   return (
@@ -33,8 +33,8 @@ function Sidebar() {
         <SidebarItem icon={<NoticeIcon />} text="Notices" to="/admin/notices"/>
       </div>
 
-      <div className="flex justify-center mt-12">
-        <Logout />
+      <div className="flex justify-center mt-10">
+        <LogoutButton />
       </div>
 
     </div>
