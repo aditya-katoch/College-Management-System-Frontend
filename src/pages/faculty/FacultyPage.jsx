@@ -1,7 +1,11 @@
+import FacultyList from "./FacultyList";
+
 function Faculty() {
   return (
-    <div>Faculty</div>
-  )
+    <div>
+      <FacultyList />
+    </div>
+  );
 }
 
-export default Faculty
+export default Faculty;

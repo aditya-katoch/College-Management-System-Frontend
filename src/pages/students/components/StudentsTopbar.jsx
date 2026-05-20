@@ -3,7 +3,7 @@ import AddIcon from "../../../icons/AddIcon";
 
 function StudentsTopbar({onAddClick}) {
   return (
-    <div className="flex justify-between px-5 py-1.5 border-b pb-1.5 border-[#0256aa]">
+    <div className="flex justify-between px-5 py-1.5 border-b pb-1.5 border-[#0256aa] mb-3">
       <div className="flex items-center gap-1.5 text-lg">
         <div className="text-[#002b58]">
           <UserGroupIcon />

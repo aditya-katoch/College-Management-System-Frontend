@@ -62,6 +62,7 @@ function StudentList() {
     <div>
       <StudentsTopbar onAddClick={openAdd} />
 
+      <div className='p-3'>
       <div className="bg-white rounded-xl border border-[#B5D4F4]">
         <StudentFilters filters={filters} onChange={handleFiltersChange} />
         <StudentTable
@@ -74,6 +75,7 @@ function StudentList() {
           onEdit={openEdit}
           onDelete={handleDelete}
         />
+      </div>
       </div>
 
       <StudentFormModal

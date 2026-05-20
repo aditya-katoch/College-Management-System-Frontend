@@ -9,12 +9,16 @@ import FeesPage from "./pages/fees/FeesPage";
 import LibraryPage from "./pages/libraryy/LibraryPage";
 import NoticesPage from "./pages/notices/NoticesPage";
 import StudentProfile from "./pages/students/StudentProfile";
+import Login from "./pages/auth/Login";
+import FacultyList from "./pages/faculty/FacultyList";
+import FacultyProfile from "./pages/faculty/FacultyProfile";
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <Routes>
+          <Route path="/" element={<Login />} />
           <Route path="/admin" element={<AdminDashboard />}>
             <Route index element={<Navigate to="dashboard" replace/>} />
             <Route path="dashboard" element={<DashboardPage />} />
@@ -26,6 +30,8 @@ function App() {
             <Route path="fees" element={<FeesPage />} />
             <Route path="library" element={<LibraryPage />} />
             <Route path="notices" element={<NoticesPage />} />
+            <Route path="faculty" element={<FacultyList />}/>
+            <Route path="faculty/:id" element={<FacultyProfile />}/>
           </Route>
         </Routes>
       </BrowserRouter>

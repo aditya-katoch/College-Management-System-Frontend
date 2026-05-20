@@ -140,12 +140,6 @@ function StudentProfile() {
         >
           Edit student
         </button>
-        <button
-          className="flex items-center gap-1.5 px-3 py-2 text-sm border
-            border-[#B5D4F4] text-[#185FA5] rounded-lg hover:bg-[#E6F1FB] transition cursor-pointer"
-        >
-          ↓ Download ID card
-        </button>
       </div>
 
       <div className="bg-white rounded-xl border border-[#B5D4F4] overflow-hidden">
